@@ -6,20 +6,27 @@ export default function HomePage() {
     <main className="flex min-h-screen flex-col items-center bg-dark-bg">
       {/* Hero Section */}
       <section id="hero" className="w-full min-h-screen flex flex-col items-center justify-center text-center px-6 sm:px-8 md:px-section-desktop pt-20 sm:pt-24 md:pt-0 pb-20">
-        <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-6 md:mb-8 text-white md:tracking-wider">
+        <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-6 md:mb-8 text-white md:tracking-wider md:mt-24">
           MiniMayhem
         </h1>
         <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-10 md:mb-12 max-w-3xl md:max-w-5xl text-gray-300">
           3 chaotic games. <span className="text-soft-yellow">1 addictive experience.</span> 🎉
         </p>
         <a 
-          href="#" // Placeholder link
+          href="https://horizon.meta.com/world/586082944595316"
+          target="_blank"
           className="text-black font-bold px-8 py-4 md:px-10 md:py-5 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 bg-gradient-to-r from-pink-500 to-yellow-400 hover:from-yellow-400 hover:to-pink-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 focus:ring-opacity-50 text-lg md:text-2xl"
         >
           Play Now on Horizon Worlds!
         </a>
         <div className="mt-12 md:mt-16 w-full max-w-4xl md:max-w-6xl aspect-video bg-gray-900/50 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-2xl border-2 border-neon-blue/40">
-          <p className="text-gray-400 text-xl md:text-2xl">📺 YouTube Demo Placeholder 🎬</p>
+          <iframe
+            className="w-full h-full rounded-2xl"
+            src="https://www.youtube.com/embed/7fJiJ5gD9fo"
+            title="MiniMayhem Gameplay Demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </section>
 
@@ -90,14 +97,26 @@ export default function HomePage() {
         </p>
         <div className="flex flex-col md:flex-row gap-8 lg:gap-12 max-w-4xl md:max-w-5xl w-full">
           <div className="bg-gray-800/50 backdrop-blur-md p-6 md:p-8 rounded-2xl flex-1 border border-soft-yellow/70 shadow-xl hover:shadow-neon-yellow transform transition-all duration-300 hover:scale-105 flex flex-col items-center">
-            <UserCircleIcon className="h-20 w-20 mb-4 text-soft-yellow" />
+            <Image
+              src="/baruch.jpeg"
+              alt="Baruch Geuze"
+              width={112}
+              height={112}
+              className="h-28 w-28 mb-4 rounded-full object-cover border-2 border-soft-yellow shadow-lg"
+            />
             <h3 className="font-heading text-3xl font-semibold text-soft-yellow mb-1">Baruch Geuze</h3>
-            <p className="italic text-gray-400">Gamertag: Bgeuze</p>
+            <p className="italic text-gray-400">Gamertag: @baruchgeuze</p>
           </div>
           <div className="bg-gray-800/50 backdrop-blur-md p-6 md:p-8 rounded-2xl flex-1 border border-soft-yellow/70 shadow-xl hover:shadow-neon-yellow transform transition-all duration-300 hover:scale-105 flex flex-col items-center">
-            <UserCircleIcon className="h-20 w-20 mb-4 text-soft-yellow" /> 
+            <Image
+              src="/joshua.png"
+              alt="Joshua Silva Maniche"
+              width={112}
+              height={112}
+              className="h-28 w-28 mb-4 rounded-full object-cover border-2 border-soft-yellow shadow-lg"
+            />
             <h3 className="font-heading text-3xl font-semibold text-soft-yellow mb-1">Joshua Silva Maniche</h3>
-            <p className="italic text-gray-400">Gamertag: JoshuaLevi</p>
+            <p className="italic text-gray-400">Gamertag: @JoshuaLevi</p>
           </div>
         </div>
       </section>
